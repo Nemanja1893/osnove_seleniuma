@@ -45,8 +45,14 @@ public class Zadatak7 {
                         " md list-md hydrated']/app-category-picker-item/ion-item/a"));
 
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i).getText());
-            Thread.sleep(500);
+            System.out.println(i + " " +lista.get(i).getText());
+            Thread.sleep(300);
+
+            if(i % 5 == 0){
+                new Actions(driver)
+                    .scrollByAmount(0, 200)
+                    .perform();
+            }
         }
 
         driver.quit();
