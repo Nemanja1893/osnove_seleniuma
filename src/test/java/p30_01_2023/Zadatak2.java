@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Zadatak2 {
     public static void main(String[] args) {
@@ -25,9 +26,13 @@ public class Zadatak2 {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         driver.findElement(By.xpath("//input[@id = 'search']")).sendKeys("Breskvica");
+        driver.findElement(By.xpath("//input[@id = 'search']")).sendKeys(Keys.SPACE);
 
+        wait.until(ExpectedConditions
+                .numberOfElementsToBeMoreThan(By
+                        .xpath("//li[@role = 'presentation']"), 3));
 
-
+        driver.findElement(By.xpath("//li[@role = 'presentation'][1]"));
 
         driver.quit();
     }

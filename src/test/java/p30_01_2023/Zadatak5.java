@@ -36,7 +36,10 @@ public class Zadatak5 {
         driver.findElement(By.id("basic-success-trigger")).click();
         driver.findElement(By.id("basic-danger-trigger")).click();
 
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath(""), 4));
+        System.out.println("Toasts appeared");
+        wait.until(ExpectedConditions.numberOfElementsToBe(By
+                .xpath("//div[contains(@class,'toast fade')][contains(@class, 'show')]")
+                , 4));
 
 
 
