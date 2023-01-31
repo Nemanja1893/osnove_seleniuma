@@ -8,8 +8,8 @@ import java.time.Duration;
 
 public class Zadatak2 {
     public static void main(String[] args) throws InterruptedException {
-//        Napisati program koji ucitava stranicu Zadatak4.html
-//        Skinite Zadatak4.html sa drajva. Otvorite u pretrazivacu duplim klikom na fajl i Downloads-a
+//        Napisati program koji ucitava stranicu p31_01_2023.Zadatak4.html
+//        Skinite p31_01_2023.Zadatak4.html sa drajva. Otvorite u pretrazivacu duplim klikom na fajl i Downloads-a
 //        i ikopirajte url. To je url za get u programu
 //        I na stranici dodaje 5 poruka “IT Bootcamp”
 //        Potrebno  je u svakoj iteraciji kliknuti na dugme Show in
@@ -23,7 +23,7 @@ public class Zadatak2 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.manage().window().maximize();
-        driver.get("file:///C:/Users/Sejn/Downloads/Zadatak4.html");
+        driver.get("file:///C:/Users/Sejn/Downloads/p31_01_2023.Zadatak4.html");
 
 
         for (int i = 0; i < 5; i++) {

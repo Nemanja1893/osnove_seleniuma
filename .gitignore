@@ -1,2 +1,5 @@
 target/
 .idea/
+downloads/
+screenshots/
+test_data/
