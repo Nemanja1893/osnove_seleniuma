@@ -28,5 +28,8 @@ public class TopNavPage extends BasePage {
     public WebElement getDeleteAccountButton(){
         return driver.findElement(By.cssSelector("a[href='/delete_account']"));
     }
+    public WebElement getLogoutLink(){
+        return driver.findElement(By.cssSelector("a[href='/logout']"));
+    }
 
 }

@@ -24,6 +24,8 @@ public abstract class BaseTests {
     protected AccountInfoPage accountInfoPage;
     protected AccountCreatedPage accountCreatedPage;
     protected Actions actions;
+    protected LoginPage loginPage;
+
 
     @BeforeClass
     public void setup(){
@@ -39,7 +41,9 @@ public abstract class BaseTests {
         newUserPage = new NewUserPage(driver, wait);
         accountInfoPage = new AccountInfoPage(driver, wait);
         accountCreatedPage = new AccountCreatedPage(driver, wait);
+        loginPage = new LoginPage(driver, wait);
         actions = new Actions(driver);
+
     }
 
     @BeforeMethod
