@@ -1,4 +1,4 @@
-package AutomatitionExercisePages;
+package AutomationExercisePages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +30,10 @@ public class TopNavPage extends BasePage {
     }
     public WebElement getLogoutLink(){
         return driver.findElement(By.cssSelector("a[href='/logout']"));
+    }
+
+    public WebElement getContuctUsLink(){
+        return driver.findElement(By.cssSelector("a[href='/contact_us']"));
     }
 
 }

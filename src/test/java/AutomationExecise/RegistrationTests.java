@@ -1,13 +1,11 @@
 package AutomationExecise;
 
-import AutomatitionExercisePages.TopNavPage;
 import com.sun.org.glassfish.gmbal.Description;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseRegistrationTests extends BaseTests{
+public class RegistrationTests extends BaseTests{
 
     @Test(priority = 1)
     @Description("User registration")

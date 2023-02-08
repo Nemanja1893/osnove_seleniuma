@@ -1,6 +1,6 @@
 package AutomationExecise;
 
-import AutomatitionExercisePages.*;
+import AutomationExercisePages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +25,7 @@ public abstract class BaseTests {
     protected AccountCreatedPage accountCreatedPage;
     protected Actions actions;
     protected LoginPage loginPage;
+    protected ContactUsPage contactUsPage;
 
 
     @BeforeClass
@@ -43,6 +44,7 @@ public abstract class BaseTests {
         accountCreatedPage = new AccountCreatedPage(driver, wait);
         loginPage = new LoginPage(driver, wait);
         actions = new Actions(driver);
+        contactUsPage = new ContactUsPage(driver, wait);
 
     }
 

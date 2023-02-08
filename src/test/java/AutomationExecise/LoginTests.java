@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AutomationExerciseLoginTests extends BaseTests{
+public class LoginTests extends BaseTests{
 
     @Test(priority = 3)
     @Description("Login User with correct email and password")
